@@ -18,6 +18,10 @@
 		0B82EE672A5BB7F700021F55 /* AsteroidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE662A5BB7F700021F55 /* AsteroidsTests.swift */; };
 		0B82EE712A5BB7F700021F55 /* AsteroidsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE702A5BB7F700021F55 /* AsteroidsUITests.swift */; };
 		0B82EE732A5BB7F700021F55 /* AsteroidsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE722A5BB7F700021F55 /* AsteroidsUITestsLaunchTests.swift */; };
+		0B82EE892A5BBE2900021F55 /* OpeningScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0B82EE882A5BBE2900021F55 /* OpeningScene.sks */; };
+		0B82EE8B2A5BC0ED00021F55 /* OpeningScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE8A2A5BC0ED00021F55 /* OpeningScene.swift */; };
+		0B82EE8D2A5BC1BB00021F55 /* Asteroid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE8C2A5BC1BB00021F55 /* Asteroid.swift */; };
+		0B82EE8F2A5BC22500021F55 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82EE8E2A5BC22500021F55 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,11 @@
 		0B82EE6C2A5BB7F700021F55 /* AsteroidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsteroidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B82EE702A5BB7F700021F55 /* AsteroidsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsUITests.swift; sourceTree = "<group>"; };
 		0B82EE722A5BB7F700021F55 /* AsteroidsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B82EE7F2A5BB8AE00021F55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0B82EE882A5BBE2900021F55 /* OpeningScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = OpeningScene.sks; sourceTree = "<group>"; };
+		0B82EE8A2A5BC0ED00021F55 /* OpeningScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScene.swift; sourceTree = "<group>"; };
+		0B82EE8C2A5BC1BB00021F55 /* Asteroid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asteroid.swift; sourceTree = "<group>"; };
+		0B82EE8E2A5BC22500021F55 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				0B82EE4C2A5BB7F500021F55 /* AppDelegate.swift */,
-				0B82EE4E2A5BB7F500021F55 /* GameScene.sks */,
-				0B82EE502A5BB7F500021F55 /* Actions.sks */,
-				0B82EE522A5BB7F500021F55 /* GameScene.swift */,
+				0B82EE8E2A5BC22500021F55 /* Constants.swift */,
 				0B82EE542A5BB7F500021F55 /* GameViewController.swift */,
 				0B82EE562A5BB7F500021F55 /* Main.storyboard */,
-				0B82EE592A5BB7F700021F55 /* Assets.xcassets */,
-				0B82EE5B2A5BB7F700021F55 /* LaunchScreen.storyboard */,
+				0B82EE7F2A5BB8AE00021F55 /* Info.plist */,
+				0B82EE802A5BB91200021F55 /* Resources */,
+				0B82EE852A5BB9BA00021F55 /* Scene */,
 			);
 			path = Asteroids;
 			sourceTree = "<group>";
@@ -129,6 +137,76 @@
 				0B82EE722A5BB7F700021F55 /* AsteroidsUITestsLaunchTests.swift */,
 			);
 			path = AsteroidsUITests;
+			sourceTree = "<group>";
+		};
+		0B82EE802A5BB91200021F55 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE832A5BB93700021F55 /* Graphics */,
+				0B82EE822A5BB92900021F55 /* Songs */,
+				0B82EE812A5BB92200021F55 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B82EE812A5BB92200021F55 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0B82EE822A5BB92900021F55 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		0B82EE832A5BB93700021F55 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE592A5BB7F700021F55 /* Assets.xcassets */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		0B82EE842A5BB95E00021F55 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE4E2A5BB7F500021F55 /* GameScene.sks */,
+				0B82EE502A5BB7F500021F55 /* Actions.sks */,
+				0B82EE522A5BB7F500021F55 /* GameScene.swift */,
+				0B82EE8C2A5BC1BB00021F55 /* Asteroid.swift */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		0B82EE852A5BB9BA00021F55 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE872A5BB9CB00021F55 /* LaunchScene */,
+				0B82EE862A5BB9C200021F55 /* OpeningScene */,
+				0B82EE842A5BB95E00021F55 /* GameScene */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		0B82EE862A5BB9C200021F55 /* OpeningScene */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE882A5BBE2900021F55 /* OpeningScene.sks */,
+				0B82EE8A2A5BC0ED00021F55 /* OpeningScene.swift */,
+			);
+			path = OpeningScene;
+			sourceTree = "<group>";
+		};
+		0B82EE872A5BB9CB00021F55 /* LaunchScene */ = {
+			isa = PBXGroup;
+			children = (
+				0B82EE5B2A5BB7F700021F55 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +318,7 @@
 				0B82EE5A2A5BB7F700021F55 /* Assets.xcassets in Resources */,
 				0B82EE5D2A5BB7F700021F55 /* LaunchScreen.storyboard in Resources */,
 				0B82EE512A5BB7F500021F55 /* Actions.sks in Resources */,
+				0B82EE892A5BBE2900021F55 /* OpeningScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +346,9 @@
 				0B82EE532A5BB7F500021F55 /* GameScene.swift in Sources */,
 				0B82EE552A5BB7F500021F55 /* GameViewController.swift in Sources */,
 				0B82EE4D2A5BB7F500021F55 /* AppDelegate.swift in Sources */,
+				0B82EE8B2A5BC0ED00021F55 /* OpeningScene.swift in Sources */,
+				0B82EE8D2A5BC1BB00021F55 /* Asteroid.swift in Sources */,
+				0B82EE8F2A5BC22500021F55 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,12 +527,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FK777K42X;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asteroids/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,9 +542,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Bruno.Asteroids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -473,12 +560,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6FK777K42X;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Asteroids/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,9 +575,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Bruno.Asteroids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
