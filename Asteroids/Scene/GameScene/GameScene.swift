@@ -16,7 +16,7 @@ class GameScene: SKScene {
   private var fire: SKSpriteNode?
   
   // Player Properties
-  let player = SKSpriteNode(imageNamed: "ship-still")
+  let jogador = SKSpriteNode(imageNamed: "ship-still")
   var isPlayerAlive = false
   var isRotatingLeft = false
   var isRotatingRight = false
@@ -24,7 +24,7 @@ class GameScene: SKScene {
   // Control Properties
   var rotation: CGFloat = 0 {
     didSet {
-      player.zRotation = deg2rad(degrees: rotation)
+      jogador.zRotation = deg2rad(degrees: rotation)
     }
   }
   let rotationFactor: CGFloat = 4 // larger number will cause faster rotation
@@ -96,18 +96,18 @@ class GameScene: SKScene {
   
   func createPlayer(atX: Double, atY: Double) {
     guard childNode(withName: "player") == nil else { return }
-    player.position = CGPoint(x: atX, y: atY)
-    player.zPosition = 0
-    player.size = CGSize(width: 120, height: 120)
-    player.name = "plaver"
-    player.texture = SKTexture(imageNamed: "ship-still")
-    addChild(player)
+    jogador.position = CGPoint(x: atX, y: atY)
+    jogador.zPosition = 0
+    jogador.size = CGSize(width: 120, height: 120)
+    jogador.name = "plaver"
+    jogador.texture = SKTexture(imageNamed: "ship-still")
+    addChild(jogador)
     
-    player.physicsBody = SKPhysicsBody (texture: player.texture ?? SKTexture(imageNamed: "ship-still"), size: player.size)
-    player.physicsBody?.affectedByGravity = false
-    player.physicsBody?.isDynamic = true
-    player.physicsBody?.mass = 0.2
-    player.physicsBody?.allowsRotation = false
+    jogador.physicsBody = SKPhysicsBody (texture: jogador.texture ?? SKTexture(imageNamed: "ship-still"), size: jogador.size)
+    jogador.physicsBody?.affectedByGravity = false
+    jogador.physicsBody?.isDynamic = true
+    jogador.physicsBody?.mass = 0.2
+    jogador.physicsBody?.allowsRotation = false
     
     isPlayerAlive = true
   }
